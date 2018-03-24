@@ -27,12 +27,16 @@
             android:parentActivityName=".HomeActivity" />
 
 
+        <activity
+            android:name=".History"
+            android:label="History"
+            android:parentActivitrName=".HomeActivity" />
+        <activity android:name=".complaint" />
 
 
         <activity android:name=".Feedback"
             android:label="Feedback"
             android:parentActivityName=".HomeActivity"/>
-
     </application>
 
 </manifest>
