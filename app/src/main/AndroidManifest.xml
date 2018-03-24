@@ -25,6 +25,12 @@
             android:label="Register"
             android:parentActivityName=".HomeActivity" />
 
+
+        <activity
+            android:name=".History"
+            android:label="History"
+            android:parentActivitrName=".HomeActivity" />
+        <activity android:name=".complaint" />
     </application>
 
 </manifest>
