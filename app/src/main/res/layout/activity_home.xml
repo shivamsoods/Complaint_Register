@@ -7,10 +7,12 @@
     tools:context="com.joora.complaint.HomeActivity"
     android:layout_centerHorizontal="true">
 
+
 <TextView
     android:layout_width="match_parent"
     android:layout_height="45dp"
     android:text="Hello"
     android:id="@+id/hello"
     android:clickable="true"/>
+
 </LinearLayout>

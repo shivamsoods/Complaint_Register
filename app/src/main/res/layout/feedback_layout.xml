@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/Image1"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:src="@drawable/feedback_icon"
+        android:padding="5dp"   />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#000000"/>
+
+        <RadioButton android:id="@+id/radio_Excellent"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:text="Excellent"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#000000"/>
+
+        <RadioButton android:id="@+id/radio_VeryGood"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Very Good"
+            android:layout_marginLeft="50dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#000000"/>
+
+        <RadioButton android:id="@+id/radio_Good"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Good"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#000000"/>
+
+        <RadioButton android:id="@+id/radio_Average"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Average"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#000000"/>
+
+        <RadioButton android:id="@+id/radio_BelowAverage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Below Average"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#000000"/>
+    </RadioGroup>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="SUGGESTIONS"
+    android:textStyle="bold"
+    android:textColor="@android:color/black"
+    android:layout_marginTop="32dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/suggestionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_gravity="top|left"
+        android:hint="Suggestions"/>
+
+    <Button
+        android:layout_width="95dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.33"
+        android:text="Submit"
+        android:layout_gravity="right"/>
+
+
+</LinearLayout>

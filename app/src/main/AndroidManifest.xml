@@ -26,6 +26,13 @@
             android:label="Register"
             android:parentActivityName=".HomeActivity" />
 
+
+
+
+        <activity android:name=".Feedback"
+            android:label="Feedback"
+            android:parentActivityName=".HomeActivity"/>
+
     </application>
 
 </manifest>
