@@ -1,204 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-
-    android:background="@drawable/gradient">
+    android:background="@drawable/background2"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="12dp"
         android:text="REGISTRATION"
-        android:textSize="50dp"
-        android:layout_marginTop="8dp"
         android:textAlignment="center"
-        android:textStyle="bold"
         android:textColor="@android:color/white"
-        android:layout_marginBottom="16dp"/>
+        android:textSize="50dp"
+        android:textStyle="bold" />
 
-
-
-
-
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="32dp"
-    android:layout_marginLeft="24dp"
-    android:layout_marginRight="24dp"
-    android:layout_marginBottom="8dp">
-
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/nameImage"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:lottie_fileName="user.json"
-        android:layout_marginTop="16dp"
-        app:lottie_loop="true"
-        app:lottie_autoPlay="true" />
-
-        <TextView
-            android:layout_marginTop="24dp"
-            android:id="@+id/name"
-            android:textColor="@android:color/black"
-            android:textSize="16dp"
-            android:layout_toRightOf="@id/nameImage"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:text="Name :"
-            android:textAlignment="center" />
-
-        <EditText
-            android:layout_marginLeft="8dp"
-            android:id="@+id/nameInput"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/name"
-            />
-    <LinearLayout
-        android:layout_marginTop="8dp"
-        android:layout_below="@id/nameImage"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@android:color/black"/>
-</RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
-        android:layout_marginBottom="8dp">
+        android:layout_marginTop="32dp">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/nameImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="user.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_toRightOf="@id/nameImage"
+            android:text="Name :"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/name"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/nameImage"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp">
+
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/rollNoImage"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            app:lottie_fileName="buttcoin_toot.json"
             android:layout_marginTop="16dp"
-            app:lottie_loop="true"
-            app:lottie_autoPlay="true" />
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="buttcoin_toot.json"
+            app:lottie_loop="true" />
 
         <TextView
-            android:layout_marginTop="24dp"
             android:id="@+id/rollNo"
-            android:layout_toRightOf="@id/rollNoImage"
             android:layout_width="80dp"
-            android:textColor="@android:color/black"
-            android:textSize="16dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_toRightOf="@id/rollNoImage"
             android:text="Roll No. :"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
 
         <EditText
-            android:layout_marginLeft="8dp"
             android:id="@+id/rollNoInput"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
             android:layout_toRightOf="@id/rollNo"
-            />
+            android:textColor="#FFFFFF" />
+
         <LinearLayout
-            android:layout_marginTop="8dp"
-            android:layout_below="@id/rollNoImage"
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="@android:color/black"/>
+            android:layout_below="@id/rollNoImage"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/black" />
 
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="8dp">
+        android:layout_marginRight="24dp">
+
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/roomNoImage"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            app:lottie_fileName="eye_blinking.json"
             android:layout_marginTop="16dp"
-            app:lottie_loop="true"
-            app:lottie_autoPlay="true" />
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="eye_blinking.json"
+            app:lottie_loop="true" />
 
         <TextView
-            android:layout_marginTop="24dp"
             android:id="@+id/roomNo"
-            android:layout_toRightOf="@id/roomNoImage"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_toRightOf="@id/roomNoImage"
             android:text="Room No. :"
-            android:textColor="@android:color/black"
-            android:textSize="16dp"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
 
         <EditText
-            android:layout_marginLeft="8dp"
             android:id="@+id/roomNoInput"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/roomNo"
-            />
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/roomNo" />
+
         <LinearLayout
-            android:layout_marginTop="8dp"
-            android:layout_below="@id/roomNoImage"
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="@android:color/black"/>
+            android:layout_below="@id/roomNoImage"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/black" />
 
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="8dp">
+        android:layout_marginRight="24dp">
+
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/mobileImage"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            app:lottie_fileName="done.json"
             android:layout_marginTop="16dp"
-            app:lottie_loop="true"
-            app:lottie_autoPlay="true" />
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="done.json"
+            app:lottie_loop="true" />
+
         <TextView
-            android:layout_marginTop="24dp"
             android:id="@+id/mobile"
-            android:textColor="@android:color/black"
-            android:textSize="15dp"
-            android:layout_toRightOf="@id/mobileImage"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_toRightOf="@id/mobileImage"
             android:text="Mobile No. :"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
 
         <EditText
-            android:layout_marginLeft="8dp"
             android:id="@+id/mobileInput"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
             android:layout_toRightOf="@id/mobile"
             android:inputType="phone
-"
-            />
+" />
+
         <LinearLayout
-            android:layout_marginTop="8dp"
-            android:layout_below="@id/mobileImage"
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="@android:color/black"/>
+            android:layout_below="@id/mobileImage"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/black" />
 
     </RelativeLayout>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SIGN UP"
         android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/loginbox"
         android:onClick="SignUp"
-        />
+        android:text="SIGN UP"
+        android:textColor="#FFFFFF" />
 
 
 </LinearLayout>

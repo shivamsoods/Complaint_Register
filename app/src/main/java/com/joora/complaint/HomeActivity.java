@@ -5,22 +5,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class HomeActivity extends AppCompatActivity {
+
+    private TextView mainName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-
         ImageView complaintImage = (ImageView) findViewById(R.id.mainComplaintImage);
 
         complaintImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this,complaint.class));
+                startActivity(new Intent(HomeActivity.this, complaint.class));
             }
         });
 
@@ -29,7 +31,7 @@ public class HomeActivity extends AppCompatActivity {
         feedbackImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this,Feedback.class));
+                startActivity(new Intent(HomeActivity.this, Feedback.class));
             }
         });
 
@@ -38,7 +40,7 @@ public class HomeActivity extends AppCompatActivity {
         aboutImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this,AboutActivity.class));
+                startActivity(new Intent(HomeActivity.this, AboutActivity.class));
             }
         });
 
@@ -47,9 +49,11 @@ public class HomeActivity extends AppCompatActivity {
         historyImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this,History.class));
+                startActivity(new Intent(HomeActivity.this, History.class));
             }
         });
+
+
 
     }
 }

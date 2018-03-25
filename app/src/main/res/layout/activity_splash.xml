@@ -4,19 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.joora.complaint.Splash"
+    android:background="#000000"
     android:orientation="vertical"
-    android:background="@drawable/splash_gradient">
+    tools:context="com.joora.complaint.Splash">
 
 
-
-
-
-<ImageView
-    android:layout_width="wrap_content"
-    android:layout_height="220dp"
-    android:src="@drawable/logo"
-    android:layout_centerInParent="true"
-    />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo" />
 
 </RelativeLayout>

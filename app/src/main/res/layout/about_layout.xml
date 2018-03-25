@@ -1,128 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background2"
     android:orientation="vertical">
 
     <TextView
-        android:paddingLeft="8dp"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:text="About"
-        android:textSize="57dp"
-        android:textColor="@color/blue"
         android:fontFamily="@font/forvertz"
-        android:textAlignment="center"
+        android:paddingLeft="8dp"
         android:paddingTop="8dp"
-        android:background="@drawable/gradient1"/>
+        android:text="About"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="57dp" />
 
 
     <TextView
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@android:color/black"
-        />
+        android:layout_marginTop="10dp"
+        android:background="@android:color/black" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Complaint Grievance System"
+        android:layout_marginLeft="5dp"
         android:fontFamily="@font/robaga"
-        android:textColor="@android:color/black"
-        android:textSize="30sp"
-        android:layout_marginLeft="5dp"/>
+        android:text="Complaint Grievance System"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Maximum of the students here in NIT-H resides in the hostels provided by the institute, we face many problems in day to day life regarding the water, electricity, food service and many more.
 
+So we here came up with the idea to build an app wherein u can file your complaint on your mobile phones and can monitor the status of your lodged  complaint."
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_gravity="right"
-        android:src="@drawable/about"
-        android:layout_marginTop="100dp"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:paddingEnd="16dp"
         android:paddingBottom="16dp"
-        android:background="@drawable/gradient_about_names">
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/Akhil"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right"
+            android:src="@drawable/about" />
 
         <TextView
             android:id="@+id/Shubham"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/goodtimes"
-            android:textColor="@color/yellow"
-
-            android:layout_alignParentRight="true"
-            android:textSize="20sp"
-            android:textStyle="bold"
             android:layout_alignParentBottom="true"
-            android:text="Shubham Thakur"/>
+            android:layout_alignParentRight="true"
+
+            android:fontFamily="@font/goodtimes"
+            android:text="Shubham Thakur"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/Vineet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@id/Shubham"
-            android:text="Vineet Sharma"
-            android:textSize="20sp"
+            android:layout_alignParentRight="true"
             android:fontFamily="@font/goodtimes"
-            android:textStyle="bold"
+            android:text="Vineet Sharma"
             android:textColor="@color/yellow"
-            android:layout_alignParentRight="true"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/Tanvi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@id/Vineet"
+            android:layout_alignParentRight="true"
             android:fontFamily="@font/goodtimes"
-            android:textColor="@color/yellow"
             android:text="Tanvi Mahajan"
+            android:textColor="@color/yellow"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_alignParentRight="true"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/Shivam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@id/Tanvi"
-            android:text="Shivam Sood"
+            android:layout_alignParentRight="true"
             android:fontFamily="@font/goodtimes"
+            android:text="Shivam Sood"
             android:textColor="@color/yellow"
-            android:textStyle="bold"
             android:textSize="20sp"
-            android:layout_alignParentRight="true"/>
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/Akhil"
-            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@id/Shivam"
-            android:text="Akhil Bisht"
+            android:layout_alignParentRight="true"
             android:fontFamily="@font/goodtimes"
+            android:text="Akhil Bisht"
             android:textColor="@color/yellow"
             android:textSize="20sp"
-            android:layout_alignParentRight="true"/>
-
+            android:textStyle="bold" />
 
 
     </RelativeLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Version 1.0"
         android:layout_marginBottom="34dp"
-        android:layout_marginLeft="5dp"/>
-
-
-
+        android:layout_marginLeft="5dp"
+        android:text="Version 1.0"
+        android:textColor="#FFFFFF" />
 
 
 </LinearLayout>

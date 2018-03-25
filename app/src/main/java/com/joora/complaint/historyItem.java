@@ -9,9 +9,9 @@ public class historyItem {
     private String mHeading;
     private String mComplaint;
 
-    public historyItem(String heading,String complaint){
-        mHeading=heading;
-        mComplaint=complaint;
+    public historyItem(String heading, String complaint) {
+        mHeading = heading;
+        mComplaint = complaint;
     }
 
 

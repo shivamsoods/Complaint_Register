@@ -15,7 +15,6 @@ import java.util.List;
  */
 
 
-
 public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.viewholder> {
 
 
@@ -26,13 +25,14 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.viewhold
 
     }
 
-    public static class viewholder extends RecyclerView.ViewHolder{
+    public static class viewholder extends RecyclerView.ViewHolder {
         public TextView heading;
         public TextView complaint;
+
         public viewholder(View itemView) {
             super(itemView);
-             heading = (TextView)itemView.findViewById(R.id.heading);
-             complaint= (TextView)itemView.findViewById(R.id.complaint);
+            heading = (TextView) itemView.findViewById(R.id.heading);
+            complaint = (TextView) itemView.findViewById(R.id.complaint);
         }
     }
 
@@ -58,8 +58,6 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.viewhold
     public int getItemCount() {
         return historyList.size();
     }
-
-
 
 
 }

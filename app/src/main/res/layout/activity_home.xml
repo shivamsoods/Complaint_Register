@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.joora.complaint.HomeActivity"
-    android:background="@drawable/gradient">
+    android:background="@drawable/main_icon"
+    tools:context="com.joora.complaint.HomeActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,11 +15,11 @@
             android:id="@+id/mainName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="68dp"
+            android:layout_marginTop="60dp"
             android:fontFamily="@font/robaga"
             android:gravity="center"
-            android:text="Ramesh"
-            android:textColor="@android:color/black"
+            android:text="NAME"
+            android:textColor="@android:color/white"
             android:textSize="40sp"
             android:textStyle="bold" />
 
@@ -28,9 +28,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/mainName"
-            android:text="E-504"
+            android:text="Room No."
             android:textAlignment="center"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="20sp" />
 
         <ImageView
@@ -38,24 +38,24 @@
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_below="@id/mainRom"
-            android:layout_marginLeft="75dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
             android:src="@drawable/complaint_icon" />
 
         <LinearLayout
             android:layout_width="1dp"
-            android:layout_height="250dp"
-            android:layout_alignTop="@+id/mainHistoryImage"
-            android:layout_marginStart="20dp"
-            android:layout_toEndOf="@+id/mainFeedbackImage"
+            android:layout_height="300dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="175dp"
             android:background="@android:color/black" />
 
         <LinearLayout
-            android:layout_width="230dp"
+            android:id="@+id/linearLayout"
+            android:layout_width="330dp"
             android:layout_height="1dp"
             android:layout_below="@id/mainComplaintText"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="22dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="33dp"
             android:background="@android:color/black" />
 
 
@@ -64,12 +64,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/mainComplaintImage"
-            android:layout_marginLeft="85dp"
-            android:background="@drawable/gradient"
+            android:layout_marginLeft="50dp"
+
             android:text="Complaint"
+            android:textColor="@android:color/white"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@android:color/black"
 
 
             />
@@ -79,26 +79,22 @@
             android:id="@+id/mainHistoryImage"
             android:layout_width="90dp"
             android:layout_height="90dp"
-            android:layout_alignLeft="@id/mainComplaintImage"
-            android:layout_below="@id/mainRom"
-            android:layout_marginLeft="145dp"
-            android:layout_marginTop="36dp"
-            android:src="@drawable/history_icon"
-
-            />
+            android:layout_above="@+id/mainComplaintText"
+            android:layout_marginLeft="260dp"
+            android:src="@drawable/historyicon_1" />
 
         <TextView
             android:id="@+id/mainHistorytext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/mainHistoryImage"
-            android:text="History"
+            android:layout_marginLeft="130dp"
             android:layout_toRightOf="@id/mainComplaintText"
-            android:layout_marginLeft="50dp"
-            android:background="@drawable/gradient"
+            android:text="History"
+
+            android:textColor="@android:color/white"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@android:color/black"
 
             />
 
@@ -108,8 +104,8 @@
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_below="@id/mainComplaintImage"
-            android:layout_marginLeft="85dp"
-            android:layout_marginTop="65dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
             android:src="@drawable/feedback_icon" />
 
         <LinearLayout
@@ -126,10 +122,10 @@
             android:layout_alignLeft="@id/mainFeedbackImage"
             android:layout_below="@id/mainFeedbackImage"
             android:text="Feedback"
+            android:textColor="@android:color/white"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@android:color/black"
-            android:background="@drawable/gradient"
+
 
             />
 
@@ -139,22 +135,21 @@
             android:layout_height="90dp"
             android:layout_alignLeft="@id/mainFeedbackImage"
             android:layout_below="@id/mainComplaintImage"
-            android:layout_marginLeft="145dp"
-            android:layout_marginTop="65dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="100dp"
             android:src="@drawable/about_icon" />
 
         <TextView
             android:id="@+id/mainAbouttext"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/mainFeedbacktext"
-            android:layout_marginLeft="70dp"
             android:layout_below="@id/mainAboutImage"
+            android:layout_marginLeft="280dp"
             android:text="About"
-            android:background="@drawable/gradient"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
 
             />
 

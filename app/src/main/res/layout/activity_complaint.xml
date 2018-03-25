@@ -38,13 +38,13 @@
         android:id="@+id/complaintInputText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text|textMultiLine"
         android:layout_margin="8dp"
         android:layout_weight="1"
         android:gravity="top"
-        android:textColorHint="@android:color/white"
         android:hint="Write Complaint text here"
-        android:textColor="@android:color/white"/>
+        android:inputType="text|textMultiLine"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
 
 
     <Button

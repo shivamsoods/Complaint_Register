@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background2"
     tools:context="com.joora.complaint.SignupActivity">
 
     <LinearLayout
@@ -27,37 +28,48 @@
             android:autoSizeMaxTextSize="400dp"
             android:gravity="center_vertical|center_horizontal"
             android:text="SIGN UP"
+            android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/emailInput"
+            android:id="@+id/emailInputSignUP"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="#ffffff"
-            android:hint="Email"
-            android:paddingLeft="5dp" />
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text"
+            android:hint=" Email"
+            android:textColorHint="#FFFFFF" />
 
         <EditText
-            android:id="@+id/passwordInput"
+            android:id="@+id/passwordInputSignUp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="#ffffff"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text"
             android:hint="Password"
-            android:paddingLeft="5dp" />
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
+            android:textColorHint="#FFFFFF" />
 
 
         <Button
-            android:id="@+id/signUpButton"
+            android:id="@+id/signUpButtonSignUP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/loginbox"
+            android:onClick="Next"
             android:paddingLeft="100dp"
             android:paddingRight="100dp"
             android:text="Next"
-            android:onClick="Next"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
 
             />
 
