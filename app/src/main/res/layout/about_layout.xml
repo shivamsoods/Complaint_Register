@@ -6,12 +6,17 @@
     android:orientation="vertical">
 
     <TextView
+        android:paddingLeft="8dp"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:text="About"
         android:textSize="57dp"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/forvertz"
+        android:textAlignment="center"
+        android:paddingTop="8dp"
+        android:background="@drawable/gradient1"/>
 
-        />
 
     <TextView
         android:layout_marginTop="10dp"
@@ -24,39 +29,99 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Complaint Grievance System"
+        android:fontFamily="@font/robaga"
+        android:textColor="@android:color/black"
         android:textSize="30sp"
         android:layout_marginLeft="5dp"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Version 1.0"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="5dp"/>
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:src="@drawable/about"
+        android:layout_marginTop="100dp"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
-        >
-
-        <TextView
-            android:id="@+id/Vineet"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:text="Vineet Sharma"/>
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:background="@drawable/gradient_about_names">
 
         <TextView
             android:id="@+id/Shubham"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/goodtimes"
+            android:textColor="@color/yellow"
 
+            android:layout_alignParentRight="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:text="Shubham Thakur"/>
+
+        <TextView
+            android:id="@+id/Vineet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/Shubham"
+            android:text="Vineet Sharma"
+            android:textSize="20sp"
+            android:fontFamily="@font/goodtimes"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/Tanvi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_above="@id/Vineet"
-            />
+            android:fontFamily="@font/goodtimes"
+            android:textColor="@color/yellow"
+            android:text="Tanvi Mahajan"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/Shivam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/Tanvi"
+            android:text="Shivam Sood"
+            android:fontFamily="@font/goodtimes"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/Akhil"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/Shivam"
+            android:text="Akhil Bisht"
+            android:fontFamily="@font/goodtimes"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"/>
+
+
+
     </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="5dp"/>
+
+
 
 
 

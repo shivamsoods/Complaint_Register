@@ -43,6 +43,8 @@
         <TextView
             android:layout_marginTop="24dp"
             android:id="@+id/name"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
             android:layout_toRightOf="@id/nameImage"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
@@ -84,6 +86,8 @@
             android:id="@+id/rollNo"
             android:layout_toRightOf="@id/rollNoImage"
             android:layout_width="80dp"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
             android:layout_height="wrap_content"
             android:text="Roll No. :"
             android:textAlignment="center" />
@@ -125,6 +129,8 @@
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="Room No. :"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
             android:textAlignment="center" />
 
         <EditText
@@ -160,6 +166,8 @@
         <TextView
             android:layout_marginTop="24dp"
             android:id="@+id/mobile"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
             android:layout_toRightOf="@id/mobileImage"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
@@ -186,8 +194,10 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
-        android:layout_marginLeft="150dp"/>
+        android:text="SIGN UP"
+        android:layout_marginLeft="150dp"
+        android:onClick="SignUp"
+        />
 
 
 </LinearLayout>

@@ -1,13 +1,20 @@
 package com.joora.complaint;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.airbnb.lottie.L;
+import com.airbnb.lottie.LottieAnimationView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,11 +53,7 @@ public class complaint extends Activity implements AdapterView.OnItemSelectedLis
     @Override
     public void onItemSelected(AdapterView parent, View view, int position, long id) {
         // On selecting a spinner item
-        String item = parent.getItemAtPosition(position).toString();
-
-        // Showing selected spinner item
-        Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
-
+        String itemSelcted = parent.getItemAtPosition(position).toString();
     }
 
 
@@ -58,5 +61,29 @@ public class complaint extends Activity implements AdapterView.OnItemSelectedLis
     public void onNothingSelected(AdapterView adapterView) {
         Toast.makeText(this, "Select something", Toast.LENGTH_LONG).show();
     }
+
+    public void SendCompalint(View view){
+        TextView complintmessage=(TextView) findViewById(R.id.complaintInputText);
+        String message;
+        message=complintmessage.getText().toString();
+
+        TextView heading=(TextView) findViewById(R.id.subjectInputText);
+        String subject;
+        subject=heading.getText().toString();
+
+
+
+        if(message.length()>10 && subject.length()>5){
+            Toast.makeText(complaint.this,"Message sent",Toast.LENGTH_SHORT).show();
+
+
+
+        }
+        else
+        {
+            Toast.makeText(complaint.this,"ENTER PROPER DESCRIPTION",Toast.LENGTH_SHORT).show();
+        }
+    }
+
 }
 
