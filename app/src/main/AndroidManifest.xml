@@ -33,6 +33,7 @@
             android:name=".History"
             android:label="History"
             android:parentActivityName=".HomeActivity" />
+
         <activity android:name=".complaint"
             android:label="Complaint"
             android:parentActivityName=".HomeActivity"/>
@@ -43,7 +44,9 @@
         <activity
             android:name=".AboutActivity"
             android:label="About"
-            android:parentActivityName=".HomeActivity" />
+            android:parentActivityName=".HomeActivity" /
+        <activity android:name=".complaint" />
+
 
 
     </application>

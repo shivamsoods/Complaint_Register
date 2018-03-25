@@ -122,6 +122,7 @@
             android:layout_marginTop="16dp"
             app:lottie_loop="true"
             app:lottie_autoPlay="true" />
+
         <TextView
             android:layout_marginTop="24dp"
             android:id="@+id/roomNo"

@@ -121,7 +121,10 @@
 
     <Button
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
+
+
         android:text="Submit"
         android:layout_gravity="right"
         android:onClick="SubmitFeedback"/>
